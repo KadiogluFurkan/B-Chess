@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "B-Chess",
+  "version": "1.0",
+  "description": "Chess.com Local Analyzer",
+  "action": {}, 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.chess.com/*"],
+      "css": ["chessboard.css", "style.css"],
+      "js": ["jquery.js", "chess.js", "chessboard.js", "content.js"]
+    }
+  ],
+"web_accessible_resources": [
+    {
+      "resources": ["img/chesspieces/wikipedia/*.png", "stockfish.js"],
+      "matches": ["*://*.chess.com/*"]
+    }
+  ]
+}

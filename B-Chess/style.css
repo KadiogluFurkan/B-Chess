@@ -1,0 +1,37 @@
+#bchess-widget {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 380px;
+    max-height: 95vh; /* Ekranın %95'inden fazla büyüme */
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Dış çerçeve taşmasın */
+}
+
+#bchess-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto; /* İÇERİK BURADA KAYACAK */
+    background-color: #1e1e1e;
+}
+
+/* Şık bir kaydırma çubuğu (Scrollbar) tasarımı */
+#bchess-content::-webkit-scrollbar {
+    width: 6px;
+}
+#bchess-content::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+#bchess-content::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
