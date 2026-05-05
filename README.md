@@ -21,4 +21,5 @@ This project was built primarily as an exercise in extension architecture, DOM m
 5. Open a computer game on Chess.com and click the "Motoru Çalıştır" button!
 
 *Disclaimer: This is a personal educational tool. Using engine analysis in live, rated multiplayer games violates fair play policies.*
+
 *_Disclaimer: This program still have some problems and bugs, but this version is likely to beat the 3200 elo bot_*
